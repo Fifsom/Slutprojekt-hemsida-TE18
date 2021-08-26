@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 10px;
+        
+    min-height: 100vh;
+
+    background:linear-gradient(90deg,#154284 ,#cd122d, yellow);
+    
+}
+
+
+.header{
+    background-color: #732A58;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px;
+    margin: 0 50px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 7px black;
+
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 53px;
+    color: white;
+
+    grid-column: -1/1;
+
+    text-align: center;
+    background:linear-gradient(90deg,#cd122d 0,#154284);
+    
+    
+}
+
+header > p {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+    
+}
+ 
+.nav{
+    background-color: #732A58; 
+    margin: 0 50px;
+    padding: 10px;
+    box-shadow: 4px 4px 7px black;
+    grid-column: 1/-1; 
+    background:linear-gradient(90deg,#cd122d 0,#154284);
+}
+ 
+.navitem{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.navitem a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    
+}
+
+.navitem a:hover {
+    color: white;
+    background: #194182;
+    
+}
+
+.main{
+    background-color: #732A58;
+    margin: 0 50px;
+    box-shadow: 4px 4px 7px black;
+
+    grid-column: 1/-1;
+    padding: 20px;
+
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: white;
+    background:linear-gradient(90deg,#cd122d 0,#154284);
+    
+}
+
+.footer{
+    background-color: #732A58;
+    margin: 0 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 7px black;
+
+    grid-column: 1/-1;
+
+    color: white;
+
+    background:linear-gradient(90deg,#cd122d ,#154284);
+}
+
+.footer__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    
+    max-width: 800px;
+}
+
+.footer__mainheader {
+    grid-column: 1 / -1;
+}
+
+.footer__content:first-of-type {
+    justify-self: start;
+}
+
+.footer__content:last-of-type {
+    justify-self: start;
+}
+
+.barca {
+    list-style-image: url(bilder/icon2.png);
+    
+}
+
+.insta {
+    list-style-image: url(bilder/insta2.png);
+}
+
+.twitter {
+    list-style-image: url(bilder/twitter2.png);
+}
+
+.youtube {
+    list-style-image: url(bilder/yt.png);
+}
+
+
+
+main > h1 {
+    text-align: center;
+}
+
+main > p {
+    max-width: 60%;
+}
+
+.stad {
+    float: right;
+    width: 350px;
+    height: 200px;
+    padding-right: 40px;
+    margin-bottom: 0px ;
+}
+
+.stad2 {
+    float: right;
+    width: 350px;
+    height: 300px;
+    padding-right: 40px;
+    margin-top: -200px;
+}
+
+.mes{
+    float: right;
+    width: 500px;
+    height: 350px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+table {
+    font-size: 30px;
+}
+
+.tabellcenter {
+    display: grid;
+    justify-content: center;
+}
+
+.messi {
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    padding-top: 0px;
+}
+.bästa {
+    max-width: 80%;
+}
+
+.laliga {
+    float: right;
+    width: 350px;
+    height: 200px;
+    margin-top: -95px;
+    font-size: 15px;
+}
+.copa {
+    float: right;
+    width: 350px;
+    height: 200px;
+    margin-top: -35px;
+    font-size: 15px;
+}
+
+.Champions {
+    float: right;
+    width: 350px;
+    height: 200px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.vm {
+    float: right;
+    height: 200px;
+    margin-top: -35px;
+    margin-right: -215px;
+    font-size: 15px;
+}
+
+.basket {
+    float: right;
+    width: 400px;
+    height: 250px;
+   
+}
+
+.handboll {
+    float: right;
+    width: 400px;
+    margin-top: -80px;
+}
